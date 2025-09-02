@@ -97,3 +97,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# No old skyboxes
+/New-VR-Project/Assets/3D-Skybox/Mediterranean-Freebies
