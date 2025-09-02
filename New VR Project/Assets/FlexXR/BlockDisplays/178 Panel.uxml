@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-styles.uss?fileID=7433441132597879392&amp;guid=27d95b6aa2853f448b30e08690d91b5d&amp;type=3#flexxr-demo-styles" />
+    <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-unity-root-styles-overrides.uss?fileID=7433441132597879392&amp;guid=c4c497b636654d4abdfbbd1547ca9de0&amp;type=3#flexxr-demo-unity-root-styles-overrides" />
+    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: scale-to-fit; width: 1800px; height: 1400px; align-items: auto; background-color: rgb(38, 38, 38);">
+        <ui:VisualElement name="VisualElement" style="width: 1800px; height: 1398px;">
+            <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 10px; width: 1800px; height: 183px; min-height: 0; min-width: 0;">
+                <ui:Label tabindex="-1" text="Block AT 178: Front Pediment&#10;Tympanon (S)" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-left: 10px; width: 1800px; font-size: 100px; height: 269px;" />
+            </ui:VisualElement>
+            <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 794px; width: 1766px; font-size: 75px;">
+                <ui:Label text="This is the central pediment tympanon block of the front façade. It bears sculptural decoration with a male bust in a wreath  in the center, held by two flying Victories. The male figure bears the cone-capped quiver and the bow, iconographic features of Apollo, a god  whom Emperor Caracalla appealed to for healing, and who appears in coinage minted during the same period. Contrary to this pediment, the back pediment was constructed by multiple blocks and was left blank." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px; height: 684px;" />
+            </ui:Foldout>
+            <ui:Foldout text="Block Placement" name="placement" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 306px; width: 1779px; font-size: 75px;">
+                <ui:Label text="The pediment block was found at the southwest of the temple, and is restored at the front façade of the temple. " display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
+</ui:UXML>

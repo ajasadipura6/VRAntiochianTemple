@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-styles.uss?fileID=7433441132597879392&amp;guid=27d95b6aa2853f448b30e08690d91b5d&amp;type=3#flexxr-demo-styles" />
+    <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-unity-root-styles-overrides.uss?fileID=7433441132597879392&amp;guid=c4c497b636654d4abdfbbd1547ca9de0&amp;type=3#flexxr-demo-unity-root-styles-overrides" />
+    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: scale-to-fit; width: 1948px; height: 1246px; align-items: auto; background-color: rgb(38, 38, 38);">
+        <ui:VisualElement name="VisualElement" style="width: 1930px; height: 1177px;">
+            <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 10px; width: 1800px; height: 177px; min-height: 0; min-width: 0;">
+                <ui:Label tabindex="-1" text="Block AT 125: Pilaster Capital (left)" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-left: 10px; width: 1800px; font-size: 100px; height: 150px;" />
+            </ui:VisualElement>
+            <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 749px; width: 1766px; font-size: 75px;">
+                <ui:Label text="This corinthian capital has bilateral symmetry on the diagonal axis, and thus it needs to be restored as a corner block at the top of a pilaster. The capital is well-preserved and bears similar carving to the column capital with three rows of acanthus leaves: two leaves on the bottom row, three on the middle and two on the top, from where two tendrils spring, one to the middle axis of each face and one to the corner of the block." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px; height: 634px;" />
+            </ui:Foldout>
+            <ui:Foldout text="Block Placement" name="placement" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 221px; width: 1779px; font-size: 75px;">
+                <ui:Label text="It was found in the northeast quadrant, close to the rear left corner of the building, and thus it is restored there." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
+</ui:UXML>

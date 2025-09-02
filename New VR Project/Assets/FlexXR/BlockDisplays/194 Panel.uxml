@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-styles.uss?fileID=7433441132597879392&amp;guid=27d95b6aa2853f448b30e08690d91b5d&amp;type=3#flexxr-demo-styles" />
+    <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-unity-root-styles-overrides.uss?fileID=7433441132597879392&amp;guid=c4c497b636654d4abdfbbd1547ca9de0&amp;type=3#flexxr-demo-unity-root-styles-overrides" />
+    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: scale-to-fit; width: 1800px; height: 1400px; align-items: auto; background-color: rgb(38, 38, 38);">
+        <ui:VisualElement name="VisualElement" style="width: 1800px; height: 1400px;">
+            <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 10px; width: 1800px; height: 183px; min-height: 0; min-width: 0;">
+                <ui:Label tabindex="-1" text="Block AT 194: Front right&#10;Pediment Geison" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-left: 10px; width: 1800px; font-size: 100px; height: 285px;" />
+            </ui:VisualElement>
+            <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 781px; width: 1766px; font-size: 75px;">
+                <ui:Label text="&quot;This is the fully intact right corner geison block from the front façade. It preserves the raking profile of a geison drip surmounted (from bottom to top) by fascia,&#10;ovolo, fascia, ovolo, and cyma recta. The underside of the drip is decorated with alternating modillions and carved cassettes with floral motifs. Cassettes in other geison blocks also include figures, such as marine animals, tools, and spirals. The structural function of this block is to bear cuttings to support the rafters of the roof.&quot;" display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px; height: 729px;" />
+            </ui:Foldout>
+            <ui:Foldout text="Block Placement" name="placement" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 319px; width: 1779px; font-size: 75px;">
+                <ui:Label text="It was found to the southwest of the temple, and thus is restored at the right front corner of the temple." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
+</ui:UXML>
