@@ -17,6 +17,7 @@ public class CrosshairClicker : MonoBehaviour
         if (Physics.Raycast(ray, out hit, raycastRange))
         {
             BlockInfo block = hit.collider.GetComponent<BlockInfo>();
+            BlockInfoRecon blockRecon = hit.collider.GetComponent<BlockInfoRecon>();
 
             if (block)
             {
@@ -25,6 +26,15 @@ public class CrosshairClicker : MonoBehaviour
                 if (Input.GetMouseButtonDown(0)) // Left-click to toggle
                 {
                     block.TogglePDF();
+                }
+            }
+            else if (blockRecon)
+            {
+                crosshairImage.color = hoverColor;
+
+                if (Input.GetMouseButtonDown(0)) // Left-click to toggle
+                {
+                    blockRecon.TogglePDF();
                 }
             }
             else
