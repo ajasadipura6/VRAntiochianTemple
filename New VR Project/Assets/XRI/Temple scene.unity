@@ -2318,6 +2318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Temple_+_Blockfield_(FBX)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ed08389ec86702468a7fe803ff06c21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11781,6 +11785,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
       propertyPath: m_Name
       value: rec_temple_blocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 934721621526109058, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
