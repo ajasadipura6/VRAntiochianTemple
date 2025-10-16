@@ -19,4 +19,19 @@ public class BlockInfoRecon : MonoBehaviour
         blockRecon.SetActive(isVisible);
         pdfWindow.SetActive(isVisible);
     }
+
+    // Global toggle methods
+    public void ShowBlock()
+    {
+        isVisible = true;
+        blockRecon.SetActive(true);
+        pdfWindow.SetActive(true);
+    }
+
+    public void HideBlock()
+    {
+        isVisible = false;
+        blockRecon.SetActive(false);
+        pdfWindow.SetActive(false);
+    }
 }

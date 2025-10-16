@@ -32620,6 +32620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360087849}
+  - component: {fileID: 1360087850}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Untagged
@@ -32669,6 +32670,19 @@ Transform:
   - {fileID: 1444659959}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 63.185, z: 0}
+--- !u!114 &1360087850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360087848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22fe7b80550a1ae439566af3caafbbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reconstructedBlocks: {fileID: 1608413167}
 --- !u!1 &1360930737 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 852931093117807768, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
@@ -37203,6 +37217,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4701783235138614998, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
+--- !u!1 &1608413167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8443843974009882262, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
+  m_PrefabInstance: {fileID: 507161779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1608897636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3607226816561645332, guid: 9421833834a42a04b9dc3818b35d0e3a, type: 3}
