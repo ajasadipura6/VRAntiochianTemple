@@ -14,6 +14,7 @@
 }
 
 .unity-base-popup-field {
+    -unity-font-style: normal;
 }
 
 .unity-base-popup-field__text {
@@ -23,6 +24,7 @@
     white-space: nowrap;
     flex-grow: 1;
     color: rgb(255, 255, 255);
+    -unity-font-style: normal;
 }
 
 .unity-base-popup-field__arrow {
@@ -77,7 +79,8 @@
     padding-left: 1px;
     padding-right: 2px;
     white-space: nowrap;
-    color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+    -unity-font-style: normal;
 }
 
 .unity-base-field__input {
@@ -86,6 +89,8 @@
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
+    -unity-font-style: normal;
+    -unity-text-align: upper-left;
 }
 
 .unity-base-popup-field__input {

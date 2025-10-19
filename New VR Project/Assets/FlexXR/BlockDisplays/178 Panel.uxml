@@ -1,17 +1,21 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-styles.uss?fileID=7433441132597879392&amp;guid=27d95b6aa2853f448b30e08690d91b5d&amp;type=3#flexxr-demo-styles" />
     <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-unity-root-styles-overrides.uss?fileID=7433441132597879392&amp;guid=c4c497b636654d4abdfbbd1547ca9de0&amp;type=3#flexxr-demo-unity-root-styles-overrides" />
-    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: scale-to-fit; width: 1800px; height: 1426px; align-items: auto; background-color: rgb(255, 255, 255);">
-        <ui:VisualElement name="VisualElement" style="width: 1788px; height: 1404px; align-self: auto; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; -unity-background-image-tint-color: rgb(0, 0, 0);">
-            <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 95px; width: 1800px; height: 183px; min-height: 0; min-width: 0;">
-                <ui:Label tabindex="-1" text="Block AT 178: &#10;Front Pediment Tympanon (S)" display-tooltip-when-elided="true" parse-escape-sequences="true" language-direction="Inherit" enabled="true" style="-unity-font-style: bold; margin-left: 10px; width: 1765px; font-size: 100px; height: 351px; background-color: rgba(0, 0, 0, 0); flex-basis: auto;" />
+    <ui:VisualElement style="align-items: center; justify-content: flex-start; height: 100%; width: 100%; position: absolute; top: 0;">
+        <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: flex-start; width: auto; align-items: flex-start; justify-content: flex-start; height: 100%; max-height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 787px; background-color: rgba(255, 227, 171, 0.9); max-width: none; flex-wrap: nowrap;">
+            <ui:VisualElement name="VisualElement" style="width: auto; align-items: flex-start; justify-content: flex-start; max-height: none; font-size: 62px; -unity-font-style: normal;">
+                <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 10px; -unity-font-style: bold;">
+                    <ui:Label tabindex="-1" text="Block AT 178: Front Pediment Tympanon (S)" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-left: 10px; color: rgb(0, 0, 0);" />
+                </ui:VisualElement>
+                <ui:ScrollView scroll-deceleration-rate="0" class="base-gemplay-list-with-scrollbar" style="width: 1776px;">
+                    <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="font-color: rgba(0, 0, 0, 0); margin-bottom: 10px; margin-top: 0; margin-right: 5px; align-items: flex-start; flex-direction: column; align-self: flex-start; justify-content: flex-end; flex-wrap: nowrap; flex-shrink: initial;">
+                        <ui:Label text="This is the central pediment tympanon block of the front façade. It bears sculptural decoration with a male bust in a wreath  in the center, held by two flying Victories. The male figure bears the cone-capped quiver and the bow, iconographic features of Apollo, a god  whom Emperor Caracalla appealed to for healing, and who appears in coinage minted during the same period. Contrary to this pediment, the back pediment was constructed by multiple blocks and was left blank." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; color: rgb(0, 0, 0);" />
+                    </ui:Foldout>
+                    <ui:Foldout text="Block Placement" name="ThisDemo" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; flex-direction: column; width: auto; align-items: stretch; justify-content: flex-start; align-content: flex-start; align-self: auto; color: rgb(0, 0, 0); height: 396px;">
+                        <ui:Label text="The pediment block was found at the southwest of the temple, and is restored at the front façade of the temple." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; color: rgb(0, 0, 0); height: 136px;" />
+                    </ui:Foldout>
+                </ui:ScrollView>
             </ui:VisualElement>
-            <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: -4px; height: 794px; width: 1766px; font-size: 75px; transform-origin: center;">
-                <ui:Label text="This is the central pediment tympanon block of the front façade. It bears sculptural decoration with a male bust in a wreath  in the center, held by two flying Victories. The male figure bears the cone-capped quiver and the bow, iconographic features of Apollo, a god  whom Emperor Caracalla appealed to for healing, and who appears in coinage minted during the same period. Contrary to this pediment, the back pediment was constructed by multiple blocks and was left blank." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px; height: 633px;" />
-            </ui:Foldout>
-            <ui:Foldout text="Block Placement" name="placement" class="foldout-toggle-panel" style="margin-bottom: -7px; margin-top: 1px; margin-right: 5px; height: 328px; width: 1779px; font-size: 75px;">
-                <ui:Label text="The pediment block was found at the southwest of the temple, and is restored at the front façade of the temple. " display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
-            </ui:Foldout>
-        </ui:VisualElement>
-    </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
+        </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
+    </ui:VisualElement>
 </ui:UXML>

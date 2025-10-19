@@ -251,7 +251,7 @@ PrefabInstance:
     - target: {fileID: 707308395019653871, guid: 342a1af240a6e9e48a21f9eb6ff767bc, type: 3}
       propertyPath: sourceAsset
       value: 
-      objectReference: {fileID: 9197481963319205126, guid: 34cbe47724ec1d84f91dd580025bd640, type: 3}
+      objectReference: {fileID: 9197481963319205126, guid: 5b292203dd399e34f8588fa9a6595c32, type: 3}
     - target: {fileID: 2360641278597974208, guid: 342a1af240a6e9e48a21f9eb6ff767bc, type: 3}
       propertyPath: runtimeSettings.interactionMode
       value: 1

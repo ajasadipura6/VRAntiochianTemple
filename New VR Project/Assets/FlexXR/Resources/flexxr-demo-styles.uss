@@ -7,6 +7,7 @@
 }
 
 .unity-toggle__input {
+    -unity-font-style: normal;
 }
 
 .dp04-solid {
@@ -254,6 +255,7 @@
 
 .unity-scroll-view {
     background-color: rgba(255, 255, 255, 0.03);
+    -unity-font-style: normal;
 }
 
 .toggle-checkmark {
