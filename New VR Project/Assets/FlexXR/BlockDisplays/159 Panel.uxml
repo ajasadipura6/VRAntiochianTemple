@@ -1,17 +1,26 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-styles.uss?fileID=7433441132597879392&amp;guid=27d95b6aa2853f448b30e08690d91b5d&amp;type=3#flexxr-demo-styles" />
     <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-unity-root-styles-overrides.uss?fileID=7433441132597879392&amp;guid=c4c497b636654d4abdfbbd1547ca9de0&amp;type=3#flexxr-demo-unity-root-styles-overrides" />
-    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: scale-to-fit; width: 1800px; height: 1200px; align-items: auto; background-color: rgb(38, 38, 38);">
-        <ui:VisualElement name="VisualElement" style="width: 1800px; height: 1177px;">
-            <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 10px; width: 1800px; height: 183px; min-height: 0; min-width: 0;">
-                <ui:Label tabindex="-1" text="Block AT 159: Upper Antae &#10;Block (left)" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-left: 10px; width: 1800px; font-size: 100px; height: 290px;" />
+    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="background-color: rgba(255, 227, 171, 0.9); flex-direction: column; padding: 20px; height: 1334px;">
+        <ui:Label text="AT 159: Upper Antae Block (left)" name="Label" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 100px; margin-bottom: 10px; white-space: normal;" />
+        <!-- Tabs -->
+        <ui:VisualElement name="VisualElement" class="tab-header" style="flex-direction: row; gap: 10px; margin-bottom: 20px; justify-content: space-evenly;">
+            <ui:Button name="overview-tab" text="Overview" class="tab-button selected" />
+            <ui:Button name="gallery-tab" text="Drawing" class="tab-button" />
+        </ui:VisualElement>
+        <!-- Content -->
+        <ui:VisualElement class="tab-content" style="flex-grow: 1; height: 1047px;">
+            <ui:VisualElement name="overview-page" class="page visible">
+                <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel"  style="margin-bottom: 10px; font-size: 75px;">
+                    <ui:Label text="This block has bylateral symmetry, which identifies it as an anta block, at the buldging extension of the cella lateral wall,  and also bears a necking, which identifies it as the block immediately below the anta capital." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px; height: 402px;" />
+                </ui:Foldout>
+                <ui:Foldout text="Block Placement" class="foldout-toggle-panel" style="margin-bottom: 10px; font-size: 75px;">
+                    <ui:Label text="Anta base found in NW quadrant, and restored on the left side of the temple." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
+                </ui:Foldout>
             </ui:VisualElement>
-            <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 497px; width: 1766px; font-size: 75px;">
-                <ui:Label text="This block has bylateral symmetry, which identifies it as an anta block, at the buldging extension of the cella lateral wall,  and also bears a necking, which identifies it as the block immediately below the anta capital." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px; height: 402px;" />
-            </ui:Foldout>
-            <ui:Foldout text="Block Placement" name="placement" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 329px; width: 1779px; font-size: 75px;">
-                <ui:Label text="Anta base found in NW quadrant, and restored on the left side of the temple." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
-            </ui:Foldout>
+            <ui:VisualElement name="gallery-page" class="page hidden">
+                <ui:Label text="Drawing Coming Soon..." style="font-size: 70px; color: gray; text-align: center; margin-top: 200px;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
 </ui:UXML>
