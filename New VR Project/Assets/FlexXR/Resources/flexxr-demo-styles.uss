@@ -231,13 +231,13 @@
 }
 
 .unity-base-slider--vertical .unity-base-slider__dragger {
-    width: 8px;
+    width: 20px;
     background-color: rgb(8, 97, 104);
     visibility: visible;
 }
 
 .unity-scroller--vertical {
-    width: 2px;
+    width: 20px;
     background-color: rgb(100, 157, 159);
     border-left-color: rgba(0, 0, 0, 0.3);
     border-right-color: rgba(0, 0, 0, 0.1);
@@ -383,9 +383,11 @@
 }
 
 #unity-checkmark {
-    font-size: 14px;
-    scale: 2 2;
-    margin-right: 12px;
+    font-size: 20px;
+    scale: 4;
+    margin-right: 20px;
+    margin-left: 10px;
+    overflow: visible;
 }
 
 .guestbook-content-row {

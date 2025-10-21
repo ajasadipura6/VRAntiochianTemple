@@ -176,3 +176,50 @@
 .unity-base-dropdown #unity-content-viewport {
     overflow: visible;
 }
+
+/* Tab header container */
+.tab-header {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+/* Tab buttons */
+.tab-button {
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 60px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    unity-text-align: center;
+}
+
+.tab-button:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Selected tab */
+.tab-button.selected {
+    background-color: #ffd700;
+    color: black;
+    font-weight: bold;
+}
+
+/* Pages */
+.page {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/* Hidden pages */
+.page.hidden {
+    display: none;
+}
+
+/* Visible pages */
+.page.visible {
+    display: flex;
+    flex-direction: column;
+}

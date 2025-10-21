@@ -1,17 +1,26 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-styles.uss?fileID=7433441132597879392&amp;guid=27d95b6aa2853f448b30e08690d91b5d&amp;type=3#flexxr-demo-styles" />
     <Style src="project://database/Assets/FlexXR/Resources/flexxr-demo-unity-root-styles-overrides.uss?fileID=7433441132597879392&amp;guid=c4c497b636654d4abdfbbd1547ca9de0&amp;type=3#flexxr-demo-unity-root-styles-overrides" />
-    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="-unity-background-scale-mode: scale-to-fit; width: 1800px; height: 1200px; align-items: auto; background-color: rgb(38, 38, 38);">
-        <ui:VisualElement name="VisualElement" style="width: 1800px; height: 1177px;">
-            <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; margin-bottom: 10px; width: 1800px; height: 183px; min-height: 0; min-width: 0;">
-                <ui:Label tabindex="-1" text="Block AT 127: Corner &#10;Pediment Geison Block (left)" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-left: 10px; width: 1800px; font-size: 100px; height: 286px;" />
+    <FlexXR.Runtime.FlexXRPanel.FlexXRContainer name="FlexXRContent" class="dp04-solid" style="background-color: rgba(255, 227, 171, 0.9); flex-direction: column; padding: 20px; height: 1334px;">
+        <ui:Label text="AT 127: Corner &#10;Pediment Geison Block (left)" name="Label" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 95px; margin-bottom: 10px; white-space: normal;" />
+        <!-- Tabs -->
+        <ui:VisualElement name="VisualElement" class="tab-header" style="flex-direction: row; gap: 10px; margin-bottom: 20px; justify-content: space-evenly;">
+            <ui:Button name="overview-tab" text="Overview" class="tab-button selected" />
+            <ui:Button name="gallery-tab" text="Drawing" class="tab-button" />
+        </ui:VisualElement>
+        <!-- Content -->
+        <ui:VisualElement class="tab-content" style="flex-grow: 1; height: 1047px;">
+            <ui:VisualElement name="overview-page" class="page visible">
+                <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel"  style="margin-bottom: 10px; font-size: 75px;">
+                    <ui:Label text="This corner geison block was orthogonally cut, diagonally to its raking geison. It bears sculptural decoration with modillions and cassettes with floral motifs." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px;" />
+                </ui:Foldout>
+                <ui:Foldout text="Block Placement" class="foldout-toggle-panel" style="margin-bottom: 10px; font-size: 75px;">
+                    <ui:Label text="It was found in the northeast quadrant, close its original position at the rear left corner of the temple." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
+                </ui:Foldout>
             </ui:VisualElement>
-            <ui:Foldout text="Block Description" name="Intro" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 391px; width: 1766px; font-size: 75px;">
-                <ui:Label text="This corner geison block was orthogonally cut, diagonally to its raking geison. It bears sculptural decoration with modillions and cassettes with floral motifs." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1741px; font-size: 60px;" />
-            </ui:Foldout>
-            <ui:Foldout text="Block Placement" name="placement" class="foldout-toggle-panel" style="margin-bottom: 10px; margin-top: 0; margin-right: 5px; height: 311px; width: 1779px; font-size: 75px;">
-                <ui:Label text="It was found in the northeast quadrant, close its original position at the rear left corner of the temple." display-tooltip-when-elided="true" style="white-space: normal; margin-bottom: 0; width: 1740px; text-overflow: ellipsis; height: 62px; font-size: 60px;" />
-            </ui:Foldout>
+            <ui:VisualElement name="gallery-page" class="page hidden">
+                <ui:Label text="Drawing Coming Soon..." style="font-size: 70px; color: gray; text-align: center; margin-top: 200px;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </FlexXR.Runtime.FlexXRPanel.FlexXRContainer>
 </ui:UXML>
