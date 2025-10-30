@@ -85972,6 +85972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360087849}
   - component: {fileID: 1360087850}
+  - component: {fileID: 1360087851}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Untagged
@@ -86034,6 +86035,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reconstructedBlocks: {fileID: 1608413167}
+--- !u!114 &1360087851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360087848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9bcffdc4d1842478e0463b1229ab9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &1360332948
 MeshCollider:
   m_ObjectHideFlags: 0

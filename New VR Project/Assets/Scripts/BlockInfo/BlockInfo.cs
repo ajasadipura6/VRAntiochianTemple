@@ -11,9 +11,20 @@ public class BlockInfo : MonoBehaviour
         blockRecon.SetActive(false);   // Initially hide the block reconstruction
     }
 
+    public void ShowBlock()
+    {
+        isVisible = true;
+        blockRecon.SetActive(true);
+    }
+
+    public void HideBlock()
+    {
+        isVisible = false;
+        blockRecon.SetActive(false);
+    }
+
     public void TogglePDF()
     {
-        isVisible = !isVisible;
-        blockRecon.SetActive(isVisible);
+        BlockManager.Instance.SetActiveBlock(this);
     }
 }

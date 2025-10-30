@@ -13,10 +13,22 @@ public class BlockInfoRecon : MonoBehaviour
         pdfWindow.SetActive(false);   // Initially hide the PDF window
     }
 
+    public void ShowPDF()
+    {
+        isVisible = true;
+        blockRecon.SetActive(true);
+        pdfWindow.SetActive(true);
+    }
+
+    public void HidePDF()
+    {
+        isVisible = false;
+        blockRecon.SetActive(false);
+        pdfWindow.SetActive(false);
+    }
+
     public void TogglePDF()
     {
-        isVisible = !isVisible;
-        blockRecon.SetActive(isVisible);
-        pdfWindow.SetActive(isVisible);
+        BlockManager.Instance.SetActiveBlock(this);
     }
 }
