@@ -3,50 +3,48 @@ using UnityEngine.UIElements;
 
 public class TabController : MonoBehaviour
 {
-    private Button overviewTab, galleryTab;
-    private VisualElement overviewPage, galleryPage;
+    public VisualTreeAsset uxml;
 
-    private void OnEnable()
+    private Button overviewTab, placementTab, galleryTab;
+    private VisualElement overviewPage, placementPage, galleryPage;
+    private VisualElement root;
+
+    void OnEnable()
     {
-        // Get the root visual element
+        // Load UXML
         var panel = GetComponent<UIDocument>();
-        if (panel == null)
-        {
-            Debug.LogError("❌ TabController: No UIDocument component found on this GameObject.", this);
-            return;
-        }
-        var root = panel.rootVisualElement;
+        root = panel.rootVisualElement;
 
-        // === TAB SETUP ===
+        // Find tabs
         overviewTab = root.Q<Button>("overview-tab");
         galleryTab = root.Q<Button>("gallery-tab");
 
+        // Find pages
         overviewPage = root.Q<VisualElement>("overview-page");
         galleryPage = root.Q<VisualElement>("gallery-page");
 
-        // Add click events for tab switching
+        // Add click events
         overviewTab.clicked += () => ShowPage(overviewTab, overviewPage);
         galleryTab.clicked += () => ShowPage(galleryTab, galleryPage);
 
         // Show default page
         ShowPage(overviewTab, overviewPage);
-
     }
 
-    private void ShowPage(Button selectedTab, VisualElement selectedPage)
+    void ShowPage(Button selectedTab, VisualElement selectedPage)
     {
-        // Remove "selected" class from all tabs
+        // Toggle tab classes
         overviewTab.RemoveFromClassList("selected");
         galleryTab.RemoveFromClassList("selected");
         selectedTab.AddToClassList("selected");
 
-        // Hide all pages
+        // Toggle page visibility
         overviewPage.AddToClassList("hidden");
         galleryPage.AddToClassList("hidden");
+
         overviewPage.RemoveFromClassList("visible");
         galleryPage.RemoveFromClassList("visible");
 
-        // Show selected page
         selectedPage.AddToClassList("visible");
         selectedPage.RemoveFromClassList("hidden");
     }

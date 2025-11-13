@@ -180,6 +180,7 @@
 /* Tab header container */
 .tab-header {
     flex-direction: row;
+    gap: 10px;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
@@ -191,7 +192,7 @@
     font-size: 60px;
     padding: 10px 20px;
     border-radius: 10px;
-    -unity-text-align: middle-center;
+    unity-text-align: center;
 }
 
 .tab-button:hover {
@@ -221,16 +222,4 @@
 .page.visible {
     display: flex;
     flex-direction: column;
-}
-
-
-/* Drawings style */
-.block-image {
-    width: 100%;
-    height: 100%;
-    align-self: center;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
