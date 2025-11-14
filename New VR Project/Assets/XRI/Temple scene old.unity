@@ -5132,7 +5132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5ed08389ec86702468a7fe803ff06c21, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -79291,6 +79291,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a020065aea8e10942b7a7ef1bb52fc38, type: 3}
       propertyPath: m_Name
       value: Antiochia_Temple_250302
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a020065aea8e10942b7a7ef1bb52fc38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
