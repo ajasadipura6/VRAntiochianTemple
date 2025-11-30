@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:New VR Project/Assets/Antiochia ad Cragum Temple.Textures.meta
 guid: f80270fa309dbdb4e86f5f42237415a8
+========
+guid: 8e2f507fcf3e22b4a914e738882ecba5
+>>>>>>>> a0b53d5008363ccddc742b0b080a929f730a70e6:New VR Project/Assets/Ruins/Low PC.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
