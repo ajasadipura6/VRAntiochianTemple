@@ -2,18 +2,29 @@ using UnityEngine;
 
 public class BlockInfo : MonoBehaviour
 {
-    public GameObject pdfWindow; // Assign the PDF display panel in the Inspector
+    public GameObject blockRecon; // Assign the block reconstruction in the Inspector
 
     private bool isVisible = false;
 
     void Start()
     {
-        pdfWindow.SetActive(false);   // Initially hide the PDF window
+        blockRecon.SetActive(false);   // Initially hide the block reconstruction
+    }
+
+    public void ShowBlock()
+    {
+        isVisible = true;
+        blockRecon.SetActive(true);
+    }
+
+    public void HideBlock()
+    {
+        isVisible = false;
+        blockRecon.SetActive(false);
     }
 
     public void TogglePDF()
     {
-        isVisible = !isVisible;
-        pdfWindow.SetActive(isVisible);
+        BlockManager.Instance.SetActiveBlock(this);
     }
 }
