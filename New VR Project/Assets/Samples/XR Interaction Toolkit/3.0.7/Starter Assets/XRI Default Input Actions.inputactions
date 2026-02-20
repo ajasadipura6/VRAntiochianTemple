@@ -977,7 +977,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Toggle Menu",
+                    "name": "Switch Tab",
                     "type": "Button",
                     "id": "2571263e-80c2-4af9-a55a-e570e9ca5be2",
                     "expectedControlType": "",
@@ -1280,7 +1280,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Toggle Menu",
+                    "action": "Switch Tab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
