@@ -1,14 +1,28 @@
 using UnityEngine;
 using TMPro;  // If you're using TextMeshPro
+using UnityEngine.InputSystem;
 
 public class ReconstructionToggle : MonoBehaviour
 {
     public GameObject reconstructedVersion;  // The reconstructed version (starts off)
-    private bool showingReconstruction = false;
-
+    
     // UI Text element to show the current mode (use TextMeshPro or Unity Text)
     public TextMeshProUGUI modeText;  // TextMeshPro Text component
     // public UnityEngine.UI.Text modeText;  // If you are using Unity's default Text (uncomment this line instead)
+
+    public InputActionReference toggleAction;  // Reference to the input action for toggling
+    
+    void OnEnable()
+    {
+        toggleAction.action.performed += onToggle;
+        toggleAction.action.Enable();
+    }
+
+    void OnDisable()
+    {
+        toggleAction.action.performed -= onToggle;
+        toggleAction.action.Disable();
+    }
 
     void Start()
     {
@@ -19,20 +33,17 @@ public class ReconstructionToggle : MonoBehaviour
         UpdateUI(false);
     }
 
-    void Update()
+    // when VR button is pressed
+    private void onToggle(InputAction.CallbackContext context)
     {
-        // Toggle on "T" key press (or use a VR controller input here)
-        if (Input.GetKeyDown(KeyCode.T))  
+        bool newState = !reconstructedVersion.activeSelf;
+        if (newState)
         {
-            showingReconstruction = !showingReconstruction;
-            if (showingReconstruction)
-            {
-                ShowReconstruction();
-            }
-            else
-            {
-                HideReconstruction();
-            }
+            ShowReconstruction();
+        }
+        else
+        {
+            HideReconstruction();
         }
     }
 
